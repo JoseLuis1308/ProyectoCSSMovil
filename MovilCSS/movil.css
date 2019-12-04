@@ -27,7 +27,10 @@ body,html{
 
 ul{
     margin-top:0;
+<<<<<<< HEAD
+=======
     margin-bottom:0;
+>>>>>>> f9d7dd4a2e0a30f81ef0aab132b4e307357406b8
     padding: 0;
     list-style-type:none;
     overflow: hidden;
