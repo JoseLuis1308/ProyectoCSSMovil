@@ -48,11 +48,22 @@ li:hover{
 /*----------------------------Colores---------------------------------*/
 .mCirculos{
 	overflow: hidden;
+	z-index: 1;
+	clear: both;
+}
+.junticos{
+	display: flex;
+	justify-content: space-between;
 }
 .circulosIp2{
-	display: inline-block;
-	float: right;
-
+	left: 95%;
+	position: relative;
+	
+}
+.circulosIp1{
+	left: 95%;
+	position: relative;
+	
 }
 #d1{
     border: solid 1px black;
@@ -236,6 +247,11 @@ figure.effect-apollo {
 	  -webkit-transition: opacity 0.35s;
 	  transition: opacity 0.35s;
   }
+  .circulosIp1{
+	  opacity: 0;
+  }
+
+  
   figure.effect-apollo p span{
 	font-weight:900;
   }
@@ -267,6 +283,12 @@ figure.effect-apollo {
 	  -webkit-transition-delay: 0.1s;
 	  transition-delay: 0.1s;
   }
+  figure.effect-apollo:hover .circulosIp1{
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	  transition-delay: 0.1s;
+}
+
   .grid figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
@@ -386,6 +408,9 @@ figure.effect-apollo {
 	  -webkit-transition: opacity 0.35s;
 	  transition: opacity 0.35s;
   }
+  .circulosIp2{
+	opacity: 0;
+}
   figure.effect-apollo2 p span{
 	font-weight:900;
   }
@@ -417,6 +442,11 @@ figure.effect-apollo {
 	  -webkit-transition-delay: 0.1s;
 	  transition-delay: 0.1s;
   }
+  figure.effect-apollo2:hover .circulosIp2{
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	  transition-delay: 0.1s;
+}
   .grid2 figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
