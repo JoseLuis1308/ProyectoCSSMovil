@@ -6,45 +6,6 @@ body html{
 	width: 100%;
 	position: absolute;
 }
-/*---------------------------Menu------------------------------------*/
-
-.menu{
-    background-color: #B0D9BE;
-    position: sticky;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-}
-
-ul{
-    margin-top:10px;
-    padding: 0;
-    list-style-type:none;
-    overflow: hidden;
-    text-align: center;
-}
-
-.limg{
-    float: left;
-}
-
-li{
-    display: inline-block;
-    margin-right: 140px;
-    float: center;
-    transition-duration: .5s;
-}
-.ali{
-    color: black;
-    text-decoration: none;
-    font-size: 2em;
-}
-
-li:hover{
-    background-color: #F2D479;
-}
 /*----------------------------Colores---------------------------------*/
 .mCirculos{
 	overflow: hidden;
@@ -136,7 +97,17 @@ height: 30px;
 width: 30px;
 height: 30px;
 }
+/*-------------- Div modelo ---------------*/
+.modelo{
+	display: flex;
+	flex-wrap: nowrap;
+	
+}
+
 /*-------------------------- Efecto 1---------------------------------*/
+.grid{
+	height: 100%;
+}
 figure.effect-apollo {
 	background: #4F5952;
   }
@@ -148,9 +119,8 @@ figure.effect-apollo {
 	margin: 0;
 	/*min-width: 320px;*/
 	/*max-width: 600px;*/
-	max-height: 900px;
-	width: 50%;
-	height: auto;
+	height: 100%;
+	width: 100%;
 	background: #4F5952;
 	text-align: center;
 	cursor: pointer;
@@ -297,7 +267,9 @@ figure.effect-apollo {
 	opacity: 0;
   }
   /*---------------------------- Efecto 2 ----------------------------------------------*/
-  
+  .grid{
+	height: 100%;
+}
   figure.effect-apollo2 {
 	background: #99D9F2;
   }
@@ -309,9 +281,8 @@ figure.effect-apollo {
 	margin: 0;
 	min-width: 320px;
 	/*max-width: 600px;*/
-	/*max-height: 900px;*/
-	width: 50%;
-	height: auto;
+	height: 100%;
+	width: 100%;
 	background: #99D9F2;
 	text-align: center;
 	cursor: pointer;
