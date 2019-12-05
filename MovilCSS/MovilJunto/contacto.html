@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio Pear</title>
+    <link href="movil.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <style>
+        /*Formulario*/
+.contenedorformulario{
+    background-image: url("img/FondoInicio.jpg");
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:1fr ;
+    position: relative;
+    margin: 0;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    position:absolute;
+    animation:1s animacion1;
+    top:80px;
+    right:60px;
+    /**/
+}
+
+@keyframes animacion1{
+    0%{
+        top:80px;
+        right: -100px;
+        overflow: hidden;
+        height: 100%;
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        right:60px;
+        opacity: 1;
+    }
+}
+
+@keyframes animacion2{
+    0%{
+        top:60px;
+        left: -100px;
+        overflow: hidden;
+        height: 100%;
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+.imp{
+    background-color: transparent;
+    border:0;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    margin-top:3px;
+    margin-right: 10px;
+}
+
+.imp:hover{
+    box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.imp{
+    width: 300px;
+    height:30px;
+}
+
+#imgC{
+    animation: animacion2 1s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top:60px;
+    left:200px;
+}
+
+#env{
+    width: 80px;
+    height: 40px;
+    position:relative;
+    left:270px;
+    margin-top: 5px;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="contPrincipal">
+
+        <div class="menu">
+            <div class="logo"></div>
+            <ul>
+                <div class="menuLogo"><a href="Inicio.html"></a></div>
+                <li class="liNormal"><a class="ali" href="index.html">Modelos</a></li>
+                <li class="liNormal"><a class="ali" href="comparar.html">Comparativas</a></li>
+                <li class="liNormal"><a class="ali" href="contacto.html">Contactos</a></li>
+            </ul>
+        </div>
+
+        <div class="contenedorformulario">
+            <div class="imgContacto"><img src="img/Atención al publico.png" id="imgC"></div>
+            <div class="conte">
+            <form class="formulario">
+                <input type="text" placeholder="Nombre" id="nombre" class="imp">
+                <input type="text" placeholder="Apellido" id="apellido" class="imp">
+                <input type="email" placeholder="Email" id="email" class="imp">
+                <input type="text" placeholder="DNI" id="dni" class="imp">
+                <input type="text" placeholder="Introduce tu duda" id="duda" class="imp">
+                <input type="number" placeholder="Telefono" id="telefono" class="imp">
+                <input type="submit" value="ENVIAR" id="env">
+            </form>
+        </div>
+        
+    </div>
+
+        <div class="footer">
+            <div class="foot1">
+                Visita una Pearl Store, llama al 900 150 503 o encuentra un distribuidor. 
+            </div>
+            <div class="foot2">   
+                <span class="copyRight">Copyright © 2019 Pearl Inc. Todos los derechos reservados.</span>
+                <div>
+                    <a class="aFoot" href="#">Política de privacidad</a><a class="aFoot" href="#">Política de privacidad</a><a class="aFoot" href="#"> Uso de cookies</a><a class="aFoot" href="#">Condiciones de uso Ventas y reembolsos</a> <a class="aFoot" href="#"></a> Avisos legales Mapa del sitio
+                    <div>
+                        <img class="logosFooter" src="img/23681.png" alt="">
+                        <img class="logosFooter" src="img/69366.png" alt="">
+                        <img class="logosFooter" src="img/Facebook-símbolo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
