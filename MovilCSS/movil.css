@@ -9,7 +9,7 @@ body,html{
     position: relative;
     display: grid;
     grid-template-columns:100% ;
-    grid-template-rows: 0.3fr 5fr 1fr;
+    grid-template-rows: 60px 5fr 1fr;
 }
 
 .menu{
@@ -27,10 +27,7 @@ body,html{
 
 ul{
     margin-top:0;
-<<<<<<< HEAD
-=======
     margin-bottom:0;
->>>>>>> f9d7dd4a2e0a30f81ef0aab132b4e307357406b8
     padding: 0;
     list-style-type:none;
     overflow: hidden;
@@ -56,24 +53,25 @@ ul{
 
 .menuLogo a{
     display: inline-block;
+
     width: 50px;
     height: 50px;
 }
 
 li{
     padding-top: 5px ;
-    float: center;
     margin-top: 0;
     margin-bottom: 0;
     height: 100%;
     width: 25%;
     display: inline-block;
     transition-duration: .5s;
+    font-size: 1.5em;
 }
 .ali{
     color: black;
     text-decoration: none;
-    font-size: 2em;
+    
 }
 
 .liNormal:hover{
@@ -112,7 +110,7 @@ li{
 #pera{
     position: absolute;
     width: 400px;
-        height: 500px;
+    height: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
